@@ -1,0 +1,202 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #edf1f4;
+    min-height: 100vh;
+}
+
+.loader{
+    display: flex;
+    flex-direction: row;
+}
+.loader div{
+    position: relative;
+    width: 50px;
+    height: 300px;
+    margin: 40px;
+    overflow: hidden;
+    border-radius: 40px;
+    background: linear-gradient(to bottom, rgba(0,0,0,0.05,
+    #edf1f1));
+    border: 7px solid #ffffff;
+    -webkit-box-shadow: 10px 11px 28px 1px rgba(34, 60, 80, 0.2);
+    -moz-box-shadow: 10px 11px 28px 1px rgba(34, 60, 80, 0.2);
+    box-shadow: 10px 11px 28px 1px rgba(34, 60, 80, 0.2);
+}
+.loader div:hover{
+    transform: scale(1.1);
+}
+
+.loader div::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+    border-radius: 40px;
+    -webkit-box-shadow: 10px 11px 28px 1px rgba(34, 60, 80, 0.2);
+    -moz-box-shadow: 10px 11px 28px 1px rgba(34, 60, 80, 0.2);
+    box-shadow: 10px 11px 28px 1px rgba(34, 60, 80, 0.2);
+}
+
+.loader div::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 36px;
+    height: 36px;
+    background: #fff ;
+    border-radius: 50%;
+    box-shadow: inset -5px -5px 5px rgba(0, 0, 0, 0.2),
+                0 40px 0 440px #2196f3 ;
+    animation: animate 2.5s ease-in-out infinite;
+    transform: translateY(160px);
+    animation-delay: calc(-0.5s * var(--i));
+    transition: 0.2s;
+}
+
+@keyframes animate{
+    0%,
+    100%{
+        transform: translatey(0px);
+    }
+    75%{
+        transform: translatey(260px);
+        filter: hue-rotate(180deg);
+       
+    }
+}
+
+
+
+
+.loader1{
+justify-content: center;
+}
+.loader1 div{
+    position: relative;
+    width: 200px;
+    height: 50px;
+    margin: 60px;
+    overflow: hidden;
+    border-radius: 40px;
+    background: linear-gradient(to bottom, rgba(0,0,0,0.05,
+    #edf1f1));
+    border: 7px solid #ffffff;
+    -webkit-box-shadow: 10px 11px 28px 1px rgba(34, 60, 80, 0.2);
+    -moz-box-shadow: 10px 11px 28px 1px rgba(34, 60, 80, 0.2);
+    box-shadow: 10px 11px 28px 1px rgba(34, 60, 80, 0.2);
+    transition: 0.2s;
+}
+.loader1 div:hover{
+    margin-left: 80px;
+    transform: scale(1.1);
+}
+
+.loader1 div::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+    border-radius: 40px;
+    -webkit-box-shadow: 10px 11px 28px 1px rgba(34, 60, 80, 0.2);
+    -moz-box-shadow: 10px 11px 28px 1px rgba(34, 60, 80, 0.2);
+    box-shadow: 10px 11px 28px 1px rgba(34, 60, 80, 0.2);
+}
+
+.loader1 div::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 36px;
+    height: 36px;
+    background: #fff ;
+    border-radius: 50%;
+    box-shadow: inset -5px -5px 5px rgba(0, 0, 0, 0.2),
+                0 40px 0 440px #2196f3 ;
+    animation: animatem 2.5s ease-in-out infinite;
+    transform: translateY(160px);
+    animation-delay: calc(-0.5s * var(--i));
+    transition: 0.2s;
+}
+
+@keyframes animatem{
+    0%,
+    100%{
+        transform: translatex(0px);
+    }
+    75%{
+        transform: translatex(260px);
+        filter: hue-rotate(180deg);
+       
+    }
+
+}
+.nest{
+    transform: translate(150px);
+}
+.btn1{
+    animation: animatebtn 2.5s ease-in-out infinite;
+}
+@keyframes animatebtn{
+    0%,100%{
+        transform: translate(0px);
+    }
+    75%{
+        transform: translatey(350px);
+    }
+}
+
+.btn2{
+    animation: animatebtn2 2.5s ease-in-out infinite;
+}
+@keyframes animatebtn2{
+    0%,100%{
+        transform: translate(0px);
+
+    }
+    75%{
+        transform: translate(00px);
+    }
+}
+
+
+.btn3{
+    animation: animatebtn3 2.0s ease-in-out infinite;
+}
+@keyframes animatebtn3{
+   0%,
+   100%{
+        transform: translate(0px);
+    }
+    75%{
+        transform: translate(00px);
+    }
+}
+
+
+.btn4{
+    animation: animatebtn4 2.5s ease-in-out infinite;
+    
+}
+@keyframes animatebtn4{
+    0%,100%{
+        transform: translate(0px);
+    }
+    75%{
+        transform: translatey(-350px);
+    }
+}
